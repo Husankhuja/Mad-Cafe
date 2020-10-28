@@ -27,7 +27,7 @@ header {
     }
     z-index: 0;
     margin: 0;
-    height: 500px;
+    height: 400px;
     width: auto;
   }
   .img-description {
@@ -100,23 +100,12 @@ footer {
   }
 
   .img-row {
-    justify-content: center;
-    align-items: center;
     .img-content {
-      background : {
-        size: cover;
-        position: center right;
-      }
-      z-index: 0;
-      margin: 0;
       height: 500px;
-      width: auto;
     }
     .img-description {
       height: 350px;
       background-color: lightgray;
-      padding: 50px;
-      z-index: 10;
     }
     .img-right {
       position: relative;
@@ -125,12 +114,6 @@ footer {
     .img-left {
       position: relative;
       right: 50px;
-    }
-    .img1 {
-      background-image: url(../img/latte.jpg);
-    }
-    .img2 {
-      background-image: url(../img/madlatte.jpg);
     }
   }
 
@@ -145,39 +128,5 @@ footer {
   }
   #contact-form {
     padding-right: 50px;
-    & > div {
-      padding: 5px;
-    }
-    input,
-    textarea,
-    button {
-      width: 100%;
-      border: none;
-      border-bottom: 1px solid black;
-
-      &:hover {
-        border: 1px solid black;
-        border-radius: 3px;
-      }
-    }
-    input {
-      height: 40px;
-    }
-    textarea {
-      height: 120px;
-    }
-    button {
-      height: 50px;
-    }
-  }
-
-  footer {
-    text-align: center;
-    div {
-      margin: 10px;
-    }
-    p {
-      font-size: 12px;
-    }
   }
 }
