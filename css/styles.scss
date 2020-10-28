@@ -1,6 +1,183 @@
 header {
   .navbar {
     background-color: white;
-    padding: 10px 40px;
+    padding: 20px 40px;
+  }
+}
+
+.row .title {
+  text-align: center;
+  h1 {
+    font-size: 50px;
+  }
+}
+.row-content {
+  margin: 50px;
+  padding: 10px;
+  width: auto;
+}
+
+.img-row {
+  justify-content: center;
+  align-items: center;
+  .img-content {
+    background : {
+      size: cover;
+      position: center right;
+    }
+    z-index: 0;
+    margin: 0;
+    height: 500px;
+    width: auto;
+  }
+  .img-description {
+    &:nth-child(2) {
+      background-color: lightgray;
+    }
+    background-color: white;
+    padding: 50px;
+    z-index: 10;
+  }
+
+  .img1 {
+    background-image: url(../img/latte.jpg);
+  }
+  .img2 {
+    background-image: url(../img/madlatte.jpg);
+  }
+}
+
+#carouselExampleSlidesOnly {
+  width: auto;
+}
+#contact-form {
+  & > div {
+    padding: 5px;
+  }
+  input,
+  textarea,
+  button {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+
+    &:hover {
+      border: 1px solid black;
+      border-radius: 3px;
+    }
+  }
+  input {
+    height: 40px;
+  }
+  textarea {
+    height: 120px;
+  }
+  button {
+    height: 50px;
+  }
+}
+
+footer {
+  text-align: center;
+  div {
+    margin: 10px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  .row .title {
+    h1 {
+      font-size: 70px;
+    }
+  }
+  .row-content {
+    margin: 100px;
+    width: auto;
+    padding: 0 50px;
+  }
+
+  .img-row {
+    justify-content: center;
+    align-items: center;
+    .img-content {
+      background : {
+        size: cover;
+        position: center right;
+      }
+      z-index: 0;
+      margin: 0;
+      height: 500px;
+      width: auto;
+    }
+    .img-description {
+      height: 350px;
+      background-color: lightgray;
+      padding: 50px;
+      z-index: 10;
+    }
+    .img-right {
+      position: relative;
+      left: 50px;
+    }
+    .img-left {
+      position: relative;
+      right: 50px;
+    }
+    .img1 {
+      background-image: url(../img/latte.jpg);
+    }
+    .img2 {
+      background-image: url(../img/madlatte.jpg);
+    }
+  }
+
+  .row .contact {
+    padding-left: 50px;
+    box-sizing: border-box;
+  }
+
+  #carouselExampleSlidesOnly {
+    padding: 0 50px;
+    width: auto;
+  }
+  #contact-form {
+    padding-right: 50px;
+    & > div {
+      padding: 5px;
+    }
+    input,
+    textarea,
+    button {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid black;
+
+      &:hover {
+        border: 1px solid black;
+        border-radius: 3px;
+      }
+    }
+    input {
+      height: 40px;
+    }
+    textarea {
+      height: 120px;
+    }
+    button {
+      height: 50px;
+    }
+  }
+
+  footer {
+    text-align: center;
+    div {
+      margin: 10px;
+    }
+    p {
+      font-size: 12px;
+    }
   }
 }
