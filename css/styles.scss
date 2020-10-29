@@ -87,6 +87,30 @@ footer {
   }
 }
 
+.menu {
+  .menu-section {
+    margin: 20px 0;
+    .menu-row {
+      margin: 20px;
+      .menu-item {
+        padding: 10px 20px;
+        .menu-description {
+          padding: 10px;
+          height: 60px;
+          border-radius: 3px;
+          background-color: lightgray;
+          p {
+            font-weight: bold;
+            .price {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 992px) {
   .row .title {
     h1 {
