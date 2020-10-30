@@ -2,10 +2,23 @@ header .navbar {
   background-color: white;
   padding: 20px 40px; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif; }
+
+body p,
+body a,
+body span {
+  font-family: "Poppins", sans-serif; }
+
 .row .title {
   text-align: center; }
   .row .title h1 {
-    font-size: 50px; }
+    font-size: 70px; }
 
 .row-content {
   margin: 50px;
